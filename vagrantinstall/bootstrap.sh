@@ -47,6 +47,9 @@ inst 'NodeJS' nodejs
 # Install the Node Package Manager
 inst 'Node Package Manager' npm
 
+# Fixes missing node/nodejs in path
+ln -s /usr/bin/nodejs /usr/bin/node
+
 # install With Bower, Grunt, and Gulp here
 npm install -g bower
 npm install -g grunt
@@ -68,7 +71,7 @@ inst 'Nginx' nginx
 sudo cat > /etc/nginx/sites-available/default <<'EOF'
 server {
   server_name localhost;
-  root /vagrant/app/public;
+  root /vagrant/app/laravel/public;
   sendfile off;
 
   gzip_static on;
@@ -160,7 +163,7 @@ echo 'export PATH="/home/vagrant/.composer/vendor/bin:$PATH"' >> /home/vagrant/.
 composer global require "laravel/installer"
 echo Composer update
 composer global update
-composer create-project laravel/laravel /vagrant/app
+composer create-project laravel/laravel /vagrant/app/laravel
 ################################################################################
 
 
