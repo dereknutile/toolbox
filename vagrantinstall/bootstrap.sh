@@ -160,7 +160,7 @@ echo 'export PATH="/home/vagrant/.composer/vendor/bin:$PATH"' >> /home/vagrant/.
 composer global require "laravel/installer"
 echo Composer update
 composer global update
-composer create-project laravel/laravel /app
+composer create-project laravel/laravel /vagrant/app
 ################################################################################
 
 
