@@ -60,6 +60,10 @@ npm install -g gulp
 # Git setup ####################################################################
 # Install Git
 inst 'Git' git
+
+# Sometimes bower is cranky about the git:// protocol
+# See: http://stackoverflow.com/questions/15669091/bower-install-using-only-https
+git config --global url."https://".insteadOf git://
 ################################################################################
 
 
@@ -164,6 +168,14 @@ composer global require "laravel/installer"
 echo Composer update
 composer global update
 composer create-project laravel/laravel /vagrant/app/laravel
+mkdir /vagrant/app/laravel/public/assets
+################################################################################
+
+
+# Compoenent installation ######################################################
+bower install /vagrant/app/bower.json
+mv bower_components /vagrant/app/laravel/public/assets
+mv /vagrant/app/laravel/public/assets/bower_components /vagrant/app/laravel/public/assets/vendor
 ################################################################################
 
 
