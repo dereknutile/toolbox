@@ -1,3 +1,3 @@
 {
-  "directory" : "app/public/assets/vendor"
+  "directory" : "/app/laravel/public/assets/vendor"
 }
