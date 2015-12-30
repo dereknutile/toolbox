@@ -1,65 +1,52 @@
-/*
-Error: Undefined variable: "$coreColor".
-        on line 59 of app/laravel/public/assets/scss/custom.scss
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* This is the custom override CSS. */
+/* Edit sass/custom.scss and compile with SASS. */
+/* Ex command: sass app/laravel/public/assets/scss/custom.scss:app/laravel/public/assets/css/custom.css --style compact */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* fonts
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* colors
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/*#c4570f*/
+/*#a6a6a6*/
+/*#93a73b*/
+/*#a6bd39*/
+/*#0078ae*/
+/*#424242*/
+/*#f2f0ed*/
+/*#87973a*/
+/*#b9ca00*/
+/*#686868*/
+/*#9b9b9b*/
+/*#fffff*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* css resets
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+* { margin: 0; padding: 0; }
 
-54: a:hover { color: $linkPrimaryHover; }
-55: 
-56: a:visited { color: darken( $linkPrimary, 8% ); }
-57: 
-58: thead, tfoot {
-59:   background-color: $coreColor;
-60: }
-61: 
-62: label.required:after {
-63:   content: " *";
-64: }
+html, body { /*height: 100%;*/ }
 
-Backtrace:
-app/laravel/public/assets/scss/custom.scss:59
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/script/tree/variable.rb:49:in `_perform'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/script/tree/node.rb:50:in `perform'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `map'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `block in with_base'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:115:in `with_frame'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/stack.rb:79:in `with_base'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:158:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `map'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/base.rb:36:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:157:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/visitors/perform.rb:8:in `visit'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:36:in `css_tree'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/engine.rb:285:in `render_with_sourcemap'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:407:in `run'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/exec/sass_scss.rb:63:in `process_result'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/exec/base.rb:52:in `parse'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/lib/sass/exec/base.rb:19:in `parse!'
-E:/bin/Ruby22/lib/ruby/gems/2.2.0/gems/sass-3.4.13/bin/sass:13:in `<top (required)>'
-E:/bin/Ruby22/bin/sass:23:in `load'
-E:/bin/Ruby22/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$coreColor\".\A         on line 59 of app/laravel/public/assets/scss/custom.scss\A \A 54: a:hover { color: $linkPrimaryHover; }\A 55: \A 56: a:visited { color: darken( $linkPrimary, 8% ); }\A 57: \A 58: thead, tfoot {\A 59:   background-color: $coreColor;\A 60: }\A 61: \A 62: label.required:after {\A 63:   content: \" *\";\A 64: }"; }
+body { font-family: "Source Sans Pro", "Times New Roman", times, sans-serif; }
+
+.fixed-top { padding-top: 70px; }
+
+p, ul, ol, address { font-size: 20px; font-family: "Source Sans Pro", "Times New Roman", times, sans-serif; line-height: 28px; }
+
+code { font-size: 16px; font-family: "Inconsolata", Courier, monospace; background-color: #959595; color: #222222; padding: 4px; border-radius: 0px; }
+
+a { color: #9e460c; }
+
+a:hover { color: #a6a6a6; }
+
+a:visited { color: #9e460c; }
+
+thead, tfoot { background-color: #f2f0ed; }
+
+label.required:after { content: " *"; }
+
+/*# sourceMappingURL=custom.css.map */
