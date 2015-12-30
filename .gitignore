@@ -8,3 +8,4 @@
 /Cheffile.lock
 /pkg/*
 /vendor
+.sass-cache/
