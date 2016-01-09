@@ -43,9 +43,8 @@ used a different name, replace it in the create database command below.
     $ create database toolbox;
 
 ### Prepare the application
-    $ cd /vagrant/
-    $ bower install
     $ cd /vagrant/app/
+    $ bower install
     $ composer install
 
 ### Generate and seed the database
