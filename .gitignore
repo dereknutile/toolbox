@@ -10,3 +10,5 @@ Homestead.json
 /pkg/*
 .sass-cache
 *css.map
+
+/.vagrant
