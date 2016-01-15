@@ -5,8 +5,8 @@
       <div class="col-md-6">
         <h3>Links</h3>
           <ul class="list-unstyled">
-            <li><a href="http://www.co.washington.or.us/" target="_blank"><i class="fa fa-external-link fa-pad-right"></i>Washington County Web Site</a></li>
-            <li><a href="http://www.co.washington.or.us/lut" target="_blank"><i class="fa fa-external-link fa-pad-right"></i>LUT Website</a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-external-link fa-pad-right"></i>Example</a></li>
+            <li><a href="#" target="_blank"><i class="fa fa-external-link fa-pad-right"></i>Example</a></li>
           </ul>
       </div><!-- /.col-md-6 -->
 
@@ -22,12 +22,12 @@
   </section><!-- /.footer-section -->
   <section class="footer-usage-section">
     <div class="container">
-      <p class="usage">Use of this site constitutes acceptance of our user agreement (effective january 1, 2014) and privacy policy (effective january 1, 2014).  The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Washington County.</p>
+      <p class="usage">USAGE_PLACEHOLDER</p>
     </div><!-- /.container -->
   </section><!-- /.footer-usage-section -->
   <section class="footer-copyright-section">
     <div class="container">
-      <p class="copyright text-center">Copyright &copy; {{ date('Y') }}, Washington County, Oregon</p>
+      <p class="copyright text-center">Copyright &copy; {{ date('Y') }}, COPYRIGHT_PLACEHOLDER, Oregon</p>
     </div><!-- /.container -->
   </section><!-- /.footer-copyright-section -->
 </footer>
