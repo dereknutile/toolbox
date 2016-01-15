@@ -11,21 +11,34 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+Route::controllers([
+  'auth' => 'Auth\AuthController',
+  'password' => 'Auth\PasswordController'
+]);
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 
 /*
 |--------------------------------------------------------------------------
-| Application Routes
+| Place routes that require authentication here
 |--------------------------------------------------------------------------
-|
-| This route group applies the "web" middleware group to every route
-| it contains. The "web" middleware group is defined in your HTTP
-| kernel and includes session state, CSRF protection, and more.
-|
 */
 
 Route::group(['middleware' => ['web']], function () {
     //
 });
+
+
+/*
+|--------------------------------------------------------------------------
+| Place routes that DO NOT require authentication here
+|--------------------------------------------------------------------------
+*/
+// Route::get('/splash',['as'=>'splash', 'uses'=>'PagesController@splash']);
+Route::get('/',['as'=>'login', 'uses'=>'Auth\AuthController@getLogin']);
+Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
+Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
