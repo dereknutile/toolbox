@@ -11,4 +11,4 @@ Homestead.json
 .sass-cache
 *css.map
 
-/.vagrant
+.vagrant
