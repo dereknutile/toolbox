@@ -29,16 +29,8 @@ Route::controllers([
 */
 
 Route::group(['middleware' => ['web']], function () {
-    //
+    // Route::get('/splash',['as'=>'splash', 'uses'=>'PagesController@splash']);
+    Route::get('/',['as'=>'login', 'uses'=>'Auth\AuthController@getLogin']);
+    Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
+    Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
 });
-
-
-/*
-|--------------------------------------------------------------------------
-| Place routes that DO NOT require authentication here
-|--------------------------------------------------------------------------
-*/
-// Route::get('/splash',['as'=>'splash', 'uses'=>'PagesController@splash']);
-Route::get('/',['as'=>'login', 'uses'=>'Auth\AuthController@getLogin']);
-Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
-Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
