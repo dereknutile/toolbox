@@ -12,7 +12,7 @@
 
           <div class="form-group">
             <label class="control-label required">Email Address</label>
-            <input type="email" class="form-control required" data-parsley-type="email" name="email" value="{-- old('email') --}" required>
+            <input type="email" class="form-control required" data-parsley-type="email" name="email" value="{{ old('email') }}" required>
           </div>
 
           <div class="form-group">
