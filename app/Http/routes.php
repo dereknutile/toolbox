@@ -17,9 +17,10 @@ Route::controllers([
   'password' => 'Auth\PasswordController'
 ]);
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+// testing route for authentication
+Route::get('/im-in', function () {
+    return "I'm In!";
+});
 
 
 /*

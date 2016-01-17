@@ -14,11 +14,13 @@
 
           <div class="form-group">
             <label class="control-label required">Email Address</label>
+            <p class="help-block">admin@test.com</p>
             <input type="email" class="form-control required" data-parsley-type="email" name="email" value="{{ old('email') }}" required>
           </div>
 
           <div class="form-group">
             <label class="control-label required">Password</label>
+            <p class="help-block">password</p>
             <input type="password" class="form-control required" name="password" required>
           </div>
 
