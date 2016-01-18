@@ -818,11 +818,12 @@ table.dataTable {
 }
 
 ul.parsley-errors-list {
-  list-style: none;
-  font-size: 12px;
-  padding-left: 12px;
-  color: #fff;
-  background-color: red;
+    list-style: none;
+    font-size: 12px;
+    padding: 12px;
+    color: #fff;
+    background-color: red;
+    margin-left: 0px;
 }
 
 .app-buttons{
