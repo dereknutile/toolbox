@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <div class="sign-in-form">
-      <div class="well">
+      <div class="well shadowed">
         <h3>Reset Password</h3>
         @if (session('status'))
           <div class="alert alert-success">

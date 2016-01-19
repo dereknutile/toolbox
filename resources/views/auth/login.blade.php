@@ -13,14 +13,13 @@
           <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
           <div class="form-group">
-            <label class="control-label required">Email Address</label>
-            <p class="help-block">admin@test.com</p>
-            <input type="email" class="form-control required" data-parsley-type="email" name="email" value="{{ old('email') }}" required>
+            <label class="control-label required">Email Address (<i class="muted">admin@test.com</i>)</label>
+            <input type="email" class="form-control required" data-parsley-type="email" name="email" value="{{ old('email') }}" placeholder="you@email.com" required>
           </div>
 
           <div class="form-group">
-            <label class="control-label required">Password</label>
-            <p class="help-block">password</p>
+            <label class="control-label required">Password (<i class="muted">password</i>)</label>
+
             <input type="password" class="form-control required" name="password" required>
           </div>
 
