@@ -6,6 +6,7 @@
         <div class="col-sm-6">
             <div class="no-well">
                 <h1>Application Overview</h1>
+                <h3>{{ Auth::user()->first_name }}</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, suscipit quidem, voluptatum dolorum nulla eum. Ea cum sit odio aperiam! Atque illum aut voluptatum eligendi illo perspiciatis facere vero provident.</p>
                 <p>Natus itaque, nihil odio cupiditate quae, doloremque totam, doloribus consectetur enim fugiat officiis repellendus in illo! Incidunt inventore dolores fugiat sed ex ducimus in laborum reprehenderit debitis, magnam aliquid quis!</p>
             </div>

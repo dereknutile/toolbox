@@ -17,8 +17,15 @@ Route::controllers([
   'password' => 'Auth\PasswordController'
 ]);
 
-// testing route for authentication
-Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
+
+/*
+|--------------------------------------------------------------------------
+| Place routes that require authentication here
+|--------------------------------------------------------------------------
+*/
+Route::group(['middleware' => ['auth']], function () {
+    Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
+});
 
 
 /*
@@ -29,7 +36,7 @@ Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
 
 Route::group(['middleware' => ['web']], function () {
     // Route::get('/splash',['as'=>'splash', 'uses'=>'PagesController@splash']);
-    Route::get('/',['as'=>'login', 'uses'=>'Auth\AuthController@getLogin']);
-    Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
+    Route::get('login',['as'=>'login', 'uses'=>'Auth\AuthController@getLogin']);
+    Route::get('logout',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
     Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
 });
