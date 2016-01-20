@@ -18,9 +18,7 @@ Route::controllers([
 ]);
 
 // testing route for authentication
-Route::get('/im-in', function () {
-    return "I'm In!";
-});
+Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
 
 
 /*
