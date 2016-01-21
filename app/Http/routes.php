@@ -24,6 +24,7 @@ Route::controllers([
 |--------------------------------------------------------------------------
 */
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('/', 'PagesController@home');
     Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
 });
 
