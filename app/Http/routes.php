@@ -23,7 +23,7 @@ Route::controllers([
 | Place routes that require authentication here
 |--------------------------------------------------------------------------
 */
-Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['web','auth']], function () {
     Route::get('/', 'PagesController@home');
     Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
 });
