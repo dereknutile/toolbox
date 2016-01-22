@@ -10,31 +10,27 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-
-
 Route::controllers([
   'auth' => 'Auth\AuthController',
   'password' => 'Auth\PasswordController'
 ]);
 
-
 /*
 |--------------------------------------------------------------------------
 | Place routes that require authentication here
 |--------------------------------------------------------------------------
 */
-Route::group(['middleware' => ['web','auth']], function () {
+// Route::group(['middleware' => ['web','auth']], function () {
+Route::group(['middleware' => ['web']], function () {
     Route::get('/', 'PagesController@home');
     Route::get('/home',['as'=>'home', 'uses'=>'PagesController@home']);
 });
 
-
 /*
 |--------------------------------------------------------------------------
 | Place routes that require authentication here
 |--------------------------------------------------------------------------
 */
-
 Route::group(['middleware' => ['web']], function () {
     // Route::get('/splash',['as'=>'splash', 'uses'=>'PagesController@splash']);
     Route::get('login',['as'=>'login', 'uses'=>'Auth\AuthController@getLogin']);
