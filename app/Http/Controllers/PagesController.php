@@ -28,6 +28,15 @@ class PagesController extends Controller
         return view('pages.home', compact('title','page_active'));
     }
 
+    // homepage
+    public function main()
+    {
+        $title = "Main Page";
+        $page_active = "main";
+
+        return view('pages.main', compact('title','page_active'));
+    }
+
     /**
     * Display the specified resource.
     *
