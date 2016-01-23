@@ -9,6 +9,16 @@ use App\Http\Controllers\Controller;
 
 class PagesController extends Controller
 {
+    /**
+     * Create a new password controller instance.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     // homepage
     public function home()
     {
