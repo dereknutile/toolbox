@@ -5,16 +5,16 @@
 <div class="container">
     <div class="row app-buttons">
         <div class="col-xs-6 col-sm-3">
-          <a href="app.html" class="btn btn-default app-button" title="Keys &amp; Passwords"><i class="fa fa-key"></i></a>
+          <a href="{{ route('keys') }}" class="btn btn-default app-button" title="Keys &amp; Passwords"><i class="fa fa-key"></i></a>
         </div>
         <div class="col-xs-6 col-sm-3">
-          <a href="app.html" class="btn btn-default app-button" title="Knowledgebase"><i class="fa fa-info-circle"></i></a>
+          <a href="{{ route('kb') }}" class="btn btn-default app-button" title="Knowledgebase"><i class="fa fa-info-circle"></i></a>
         </div>
         <div class="col-xs-6 col-sm-3">
-          <a href="app.html" class="btn btn-default app-button" title="Task &amp; Project Management"><i class="fa fa-check-square-o"></i></a>
+          <a href="{{ route('tasks') }}" class="btn btn-default app-button" title="Task &amp; Project Management"><i class="fa fa-check-square-o"></i></a>
         </div>
         <div class="col-xs-6 col-sm-3">
-          <a href="app.html" class="btn btn-default app-button" title="Cloud Tools"><i class="fa fa-cloud-upload"></i></a>
+          <a href="{{ route('cloud') }}" class="btn btn-default app-button" title="Cloud Tools"><i class="fa fa-cloud-upload"></i></a>
         </div>
     </div>
     <div class="row">
