@@ -34,7 +34,7 @@
 
 html, body { /*height: 100%;*/ }
 
-body { font-family: "Source Sans Pro", "Times New Roman", times, sans-serif; }
+body { font-family: "Source Sans Pro", "Times New Roman", times, sans-serif; background-color: #f6f6f6; }
 
 .fixed-top { padding-top: 70px; }
 
@@ -86,7 +86,7 @@ a.navbar-brand.navbar-brand-admin { color: #93a73b; }
 
 .navbar-nohover { font-family: Raleway, Arial, Helvetica, sans-serif; font-weight: 100; padding-top: 12px; font-size: 20px; line-height: 30px; color: #72812e; }
 
-.navbar-public { padding-top: 9px; padding-bottom: 28px; background-color: white; }
+.navbar-public { padding-top: 9px; padding-bottom: 28px; background-color: #ffffff; }
 
 .nav-sidebar > li > a { font-size: 14px; line-height: 18px; }
 
@@ -140,7 +140,7 @@ a.navbar-brand.navbar-brand-admin { color: #93a73b; }
   h2.page-subtitle { font-weight: 100; font-size: 20px; color: #424242; font-family: Raleway, Arial, Helvetica, sans-serif; margin-top: 10px; margin-bottom: 6px; } }
 @media (max-width: 640px) { h1.page-title { font-weight: 400; font-family: Raleway, Arial, Helvetica, sans-serif; color: #0078ae; font-size: 22px; }
   h2.page-subtitle { font-weight: 100; font-size: 18px; font-family: Raleway, Arial, Helvetica, sans-serif; } }
-.copy-section { background-color: #fff; /*margin-top: 10px;*/ margin-bottom: 36px; }
+.copy-section { margin-bottom: 36px; }
 
 .copy-section h1 { font-weight: 400; font-size: 24px; }
 

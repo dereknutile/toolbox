@@ -27,6 +27,9 @@ $monospacePrimary : "Inconsolata", Courier, monospace;
 $linkPrimary: rgb(196,87,15); /*#c4570f*/
 $linkPrimaryHover: rgb(166,166,166); /*#a6a6a6*/
 
+$backgroundPrimary1: #ffffff;
+$backgroundPrimary2: #f6f6f6;
+
 $primaryPalette1: rgb(147,167,59); /*#93a73b*/
 $primaryPalette2: rgb(167,188,57); /*#a6bd39*/
 $primaryPalette3: rgb(0,120,174); /*#0078ae*/
@@ -51,7 +54,7 @@ $darkContrastColor: rgb(65, 65, 65);
 
 html, body { /*height: 100%;*/ }
 
-body { font-family: $sansSerifPrimary; }
+body { font-family: $sansSerifPrimary; background-color: $backgroundPrimary2; }
 .fixed-top { padding-top: 70px;}
 
 #bg {
@@ -179,7 +182,7 @@ a.navbar-brand.navbar-brand-admin {
 .navbar-public {
   padding-top: 9px;
   padding-bottom: 28px;
-  background-color: $secondaryPalette5;
+  background-color: $backgroundPrimary1;
 }
 
 @media (min-width: 768px){
@@ -378,8 +381,6 @@ a.navbar-brand.navbar-brand-admin {
 }
 
 .copy-section {
-  background-color: #fff;
-  /*margin-top: 10px;*/
   margin-bottom: 36px;
 }
 
