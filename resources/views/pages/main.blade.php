@@ -10,7 +10,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">Page Title</a>
+          <a class="navbar-brand" href="">{{ $title }}</a>
         </div>
 
         <div id="navbar" class="collapse navbar-admin navbar-collapse">

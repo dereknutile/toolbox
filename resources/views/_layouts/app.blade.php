@@ -5,8 +5,8 @@
 </head>
 
 <body>
-    @include('_includes/header')
     @include('_includes/top_navigation')
+    @include('_includes/header')
 
   <div class="page-content">
     <div class="copy-section">

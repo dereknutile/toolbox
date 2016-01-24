@@ -1,6 +1,6 @@
 <ul class="nav nav-sidebar top-sidebar-block">
   <li class="sidebar-nav">
-    <a class="sidebar-logo" href="main.html" title="Toolbox Main Page"><img src="assets/img/logo-no-text.png" /></a>
+    <a class="sidebar-logo" href="{{ route('root') }}" title="{{ Config::get('app.app_title') }}"><img src="assets/img/logo-no-text.png" /></a>
   </li>
 </ul>
 <ul class="nav nav-sidebar">
