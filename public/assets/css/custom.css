@@ -34,7 +34,7 @@
 
 html, body { /*height: 100%;*/ }
 
-body { font-family: "Source Sans Pro", "Times New Roman", times, sans-serif; background-color: #f6f6f6; }
+body { font-family: "Source Sans Pro", "Times New Roman", times, sans-serif; }
 
 .fixed-top { padding-top: 70px; }
 
