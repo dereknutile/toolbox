@@ -1,4 +1,4 @@
-@extends('_layouts/main')
+@extends('_layouts/medium')
 
 @section('content')
 <nav class="navbar admin-navbar">
