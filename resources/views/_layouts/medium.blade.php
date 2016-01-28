@@ -10,7 +10,8 @@
     </div><!-- /.admin-sidebar -->
 
     <div class="col-sm-11 col-sm-offset-1 main">
-          @yield('content')
+        @include('_includes/flash')
+        @yield('content')
     </div><!-- /.main -->
 
   @include('_includes/scripts')
