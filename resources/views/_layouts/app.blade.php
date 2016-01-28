@@ -4,9 +4,10 @@
   @include('_includes/head')
 </head>
 
-<body>
+<body class="fixed-top">
     @include('_includes/top_navigation')
-    @include('_includes/header')
+    @include('_includes/flash')
+    @include('_includes/page_title')
 
   <div class="page-content">
     <div class="copy-section">
