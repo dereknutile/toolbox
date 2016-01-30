@@ -428,7 +428,7 @@ a.navbar-brand.navbar-brand-admin {
 }
 
 .footer-usage-section {
-  background-color: $primaryPalette2;
+  background-color: lighten( $primaryPalette4, 12% );
   padding-top: 24px;
   padding-bottom: 24px;
 }
