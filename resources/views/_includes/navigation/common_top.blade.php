@@ -23,7 +23,7 @@
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bars"></i></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('keys') }}"><i class="fa fa-key"></i>&nbsp;Keys &amp; Passwords</a></li>
+                        <li><a href="{{ route('secrets') }}"><i class="fa fa-key"></i>&nbsp;Keys &amp; Passwords</a></li>
                         <li><a href="{{ route('kb') }}"><i class="fa fa-info-circle"></i>&nbsp;Knowledgebase</a></li>
                         <li><a href="{{ route('tasks') }}"><i class="fa fa-check-square-o"></i>&nbsp;Task &amp; Project Management</a></li>
                         <li><a href="{{ route('cloud') }}"><i class="fa fa-cloud-upload"></i>&nbsp;Cloud Tools</a></li>

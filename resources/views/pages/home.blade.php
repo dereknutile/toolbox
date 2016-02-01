@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row app-buttons">
         <div class="col-xs-6 col-sm-3">
-          <a href="{{ route('keys') }}" class="btn btn-default app-button" title="Keys &amp; Passwords"><i class="fa fa-key"></i></a>
+          <a href="{{ route('secrets') }}" class="btn btn-default app-button" title="Keys &amp; Passwords"><i class="fa fa-key"></i></a>
         </div>
         <div class="col-xs-6 col-sm-3">
           <a href="{{ route('kb') }}" class="btn btn-default app-button" title="Knowledgebase"><i class="fa fa-info-circle"></i></a>

@@ -5,7 +5,7 @@
 </head>
 
 <body class="fixed-top">
-    @include('_includes/top_navigation')
+    @include('_includes/navigation/common_top')
     @include('_includes/flash')
     @include('_includes/page_title')
 
