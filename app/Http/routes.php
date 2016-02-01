@@ -32,10 +32,8 @@ Route::group(['middleware' => 'web'], function () {
         return 'Account Page';
     }]);
 
-    Route::get('keys', ['as' => 'keys', function()
-    {
-        return 'Keys Page';
-    }]);
+
+    Route::get('secrets',['as'=>'secrets', 'uses'=>'SecretsController@index']);
 
     Route::get('kb', ['as' => 'kb', function()
     {
