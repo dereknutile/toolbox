@@ -24,8 +24,8 @@ $monospacePrimary : "Inconsolata", Courier, monospace;
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 /* Color palette from the styleguide page 5
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-$linkPrimary: rgb(196,87,15); /*#c4570f*/
-$linkPrimaryHover: rgb(166,166,166); /*#a6a6a6*/
+$linkPrimary: darken( rgb(0,0,255), 18% ); /*blue*/
+$linkPrimaryHover: lighten( rgb(0,0,255), 18% ); /*light blue*/
 
 $backgroundPrimary1: #ffffff;
 $backgroundPrimary2: #f6f6f6;
@@ -306,8 +306,8 @@ a.navbar-brand.navbar-brand-admin {
 }
 
 .btn-default {
-  color: lighen( $linkPrimary, 10% );
-  border-color: lighen( $linkPrimary, 10% );
+  color: lighten( $linkPrimary, 10% );
+  border-color: lighten( $linkPrimary, 10% );
 }
 
 .btn-default:hover {
@@ -317,8 +317,8 @@ a.navbar-brand.navbar-brand-admin {
 }
 
 .btn-default:visited {
-  color: lighen( $linkPrimary, 10% );
-  border-color: lighen( $linkPrimary, 10% );
+  color: lighten( $linkPrimary, 10% );
+  border-color: lighten( $linkPrimary, 10% );
 }
 
 .btn-link {
