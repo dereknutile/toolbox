@@ -4,7 +4,7 @@
 # Configuration Settings #######################################################
 VAGRANTFILE_API_VERSION = "2"
 VAGRANT_SCRIPT_DIR = "bin"
-VM_BOX = "ubuntu/xenial64"
+VM_BOX = "ubuntu/trusty32"
 SSH_PORT = 8022
 WEB_PORT = 8080
 SQL_PORT = 33306
