@@ -2,14 +2,31 @@
 # vi: set ft=ruby :
 
 # Configuration Settings #######################################################
-  VAGRANTFILE_API_VERSION = "2"
-  VAGRANTFILE_VM_BOX = "scotch/box"
-  VAGRANTFILE_VM_IP = "192.168.33.10"
-  VAGRANTFILE_VM_HOSTNAME = "scotchbox"
+VAGRANTFILE_API_VERSION = "2"
+VAGRANT_SCRIPT_DIR = "bin"
+VM_BOX = "ubuntu/xenial64"
+SSH_PORT = 8022
+WEB_PORT = 8080
+SQL_PORT = 33306
+MEMORY = 2048
+################################################################################
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-    config.vm.box = VAGRANTFILE_VM_BOX
-    config.vm.network "private_network", ip: VAGRANTFILE_VM_IP
-    config.vm.hostname = VAGRANTFILE_VM_HOSTNAME
-    config.vm.synced_folder ".", "/var/www", :mount_options => ["dmode=777", "fmode=666"]
+    config.vm.box = VM_BOX
+    config.vm.provision :shell, path: VAGRANT_SCRIPT_DIR+"/vagrant-bootstrap.sh"
+    config.vm.provision :shell, path: VAGRANT_SCRIPT_DIR+"/install-laravel.sh", privileged: false
+
+    config.vm.network "forwarded_port", guest: 22,   host: SSH_PORT
+    config.vm.network "forwarded_port", guest: 80,   host: WEB_PORT
+    config.vm.network "forwarded_port", guest: 3306, host: SQL_PORT
+
+    config.vm.synced_folder ".", "/vagrant", id: "vagrant",
+        owner: "vagrant",
+        group: "www-data",
+        nfs: false,
+        mount_options: ["dmode=777,fmode=777"]
+
+    config.vm.provider "virtualbox" do |vb|
+        vb.customize ["modifyvm", :id, "--memory", MEMORY]
+    end
 end

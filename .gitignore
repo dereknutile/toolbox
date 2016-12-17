@@ -1,14 +1,5 @@
 .DS_Store
 *~
-/vendor
-/node_modules
-Homestead.yaml
-Homestead.json
-.env
-
+/.vagrant
 /tmp
-/pkg/*
-.sass-cache
-*css.map
-
-.vagrant
+/vendor
