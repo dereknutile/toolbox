@@ -1,0 +1,32 @@
+{
+  "name": "toolbox",
+  "version": "0.1.0",
+  "homepage": "https://github.com/dereknutile/toolbox",
+  "authors": [
+    "Derek Nutile <hi@dereknutile.com>"
+  ],
+  "description": "IT Toolbox",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "^3.5.2",
+    "list.js": "^1.5.0",
+    "datatables": "^1.10.12",
+    "vue": "^2.1.1",
+    "bootstrap": "^3.3.7",
+    "fontawesome": "^4.7.0",
+    "tinymce": "^4.4.3",
+    "select2": "^4.0.3",
+    "parsleyjs": "^2.6.0",
+    "jquery": "^3.1.1",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.45",
+    "highcharts": "^5.0.7"
+  }
+}
