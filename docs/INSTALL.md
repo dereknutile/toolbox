@@ -51,4 +51,4 @@ If you see an error similar to: ` No supported encrypter found. The cipher and /
     Application key [new_key] set successfully.
 
 ## Schema Documentation
-[Schema Documentation](docs/SCHEMA.md)
+[Schema Documentation](SCHEMA.md)
