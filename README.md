@@ -13,4 +13,4 @@ The IT Toolbox is a web application that allows IT professionals a secure interf
 * Assets
 
 ## Development
-The IT Toolbox is a [Laravel](https://laravel.com/) application that runs in a [Vagrant](http://www.vagrantup.com/) virtual environment.  To develop, follow the [installation documentation](INSTALL.md).
+The IT Toolbox is a [Laravel](https://laravel.com/) application that runs in a [Vagrant](http://www.vagrantup.com/) virtual environment.  To develop, follow the [installation documentation](docs/INSTALL.md).
