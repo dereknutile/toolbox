@@ -7,7 +7,7 @@ Tables listed below are defined for planning and are not necessarily the actual 
 
 Also, as a rule, most tables will use the unique identifier `id` and store a `created_at` date and `updated_at` date.
 
-### Administration
+### Acl
 
 #### Structure
 
@@ -31,12 +31,16 @@ Stores messages to communicate alerts to user base.  Ties to the priority table.
 | author_id     | integer       |          |          |          |
 
 ### Asset
+Assets are physical devices tracked in the system.
 
 #### Structure
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| asset_id      | integer       |          |          |          |
+| name          | varchar       |          |          |          |
+| description   | text          |          |          |          |
+| assigned_to   | integer       |          |          |          |
 
 ### Documentation
 
@@ -44,7 +48,10 @@ Stores messages to communicate alerts to user base.  Ties to the priority table.
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| title         | varchar       |          |          |          |
+| content       | text          |          |          |          |
+| status_id     | integer       |          |          |          |
+| author_id     | integer       |          |          |          |
 
 ### Favorite
 
@@ -52,7 +59,8 @@ Stores messages to communicate alerts to user base.  Ties to the priority table.
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| author_id     | integer       |          |          |          |
+| user_id       | integer       |          |          |          |
 
 ### File
 Common table to store file data.
@@ -61,8 +69,10 @@ Common table to store file data.
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-| title         | varchar       |          |          |          |
-| entitiy_id    |               |          |          |          |
+| url           | varchar       | 255      |          |          |
+| title         | varchar       | 255      |          |          |
+| entity        | varchar       | 255      |          |          |
+| entitiy_id    | integer       |          |          |          |
 | author_id     | integer       |          |          |          |
 
 ### Flag
@@ -79,7 +89,17 @@ Common table to store file data.
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| title         | varchar       |          |          |          |
+| status_id     | integer       |          |          |          |
+
+### Group User
+
+#### Structure
+
+| Name          | Type          | Length   | Default  | Required |
+| ------------- |:-------------:| --------:| --------:| --------:|
+| group_id      | integer       |          |          |          |
+| user_id       | integer       |          |          |          |
 
 ### Impact
 
@@ -95,7 +115,10 @@ Common table to store file data.
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| title         | varchar       | 255      |          |          |
+| content       | text          |          |          |          |
+| hash          | varchar       | 200      |          |          |
+| status_id     | integer       |          |          |          |
 
 ### Log
 
