@@ -8,6 +8,7 @@ Tables listed below are defined for planning and are not necessarily the actual 
 Also, as a rule, most tables will use the unique identifier `id` and store a `created_at` date and `updated_at` date.
 
 ### Acl
+Note: consider a pre-build system for this.
 
 #### Structure
 
