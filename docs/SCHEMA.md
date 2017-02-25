@@ -139,6 +139,7 @@ How many users are impacted by this?
 -------------------------------------------------------------------------------
 
 ### Key
+Collection of stored security keys, passwords, and notes.
 
 #### Structure
 
@@ -157,7 +158,10 @@ How many users are impacted by this?
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| entry         | varchar       | 255      |          |          |
+| entity        | varchar       | 255      |          |          |
+| entity_id     | integer       |          |          |          |
+| author_id     | integer       |          |          |          |
 
 -------------------------------------------------------------------------------
 
@@ -195,7 +199,7 @@ Software priorities like essential, critical, desireable, etc.
 -------------------------------------------------------------------------------
 
 ### Software
-Software directory for tracking vendors, internal contacts, etc.
+Software directory to describe supported software, assign to internal support and external vendors.
 
 #### Example fields
 Title - Accela, IVR; Area - GIS, permits; Company - Verizon; Servers - SQLname, IISname; SoftwareType - tool, application; support priority - essential, critical, desireable; Web Based - t/f; Contacts - Joe, Jill
@@ -207,7 +211,8 @@ Title - Accela, IVR; Area - GIS, permits; Company - Verizon; Servers - SQLname, 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
 | title         | varchar       | 255      |          |          |
-| content       | text          |          |          |          |
+| description   | text          |          |          |          |
+| notes         | text          |          |          |          |
 | contact_id    | integer       |          |          |          |
 | priority_id   | integer       |          |          |          |
 | deleted_at    | datetime      |          |          |          |
