@@ -166,12 +166,19 @@ Collection of stored security keys, passwords, and notes.
 -------------------------------------------------------------------------------
 
 ### Message
+Personal communications to users.  These messages could be other users requesting access to an owner of an object, like a security key or document.  They could also be management assignments, work orders expiring, etc.  The `read` boolean is a simple toggle to de/activate the marked-as-read feature.
 
 #### Structure
 
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
+| user_id       | integer       |          |          |          |
+| requester_id  | integer       |          |          |          |
+| message       | varchar       | 255      |          |          |
+| entity        | varchar       | 255      |          |          |
+| entity_id     | integer       |          |          |          |
+| read          | boolean       |          |          |          |
+| due_at        | datetime      |          |          |          |
 
 -------------------------------------------------------------------------------
 
