@@ -195,16 +195,6 @@ Software priorities like essential, critical, desireable, etc.
 
 -------------------------------------------------------------------------------
 
-### Report
-
-#### Structure
-
-| Name          | Type          | Length   | Default  | Required |
-| ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
-
--------------------------------------------------------------------------------
-
 ### Software
 Software directory to describe supported software, assign to internal support and external vendors.
 
@@ -240,18 +230,8 @@ Statuses, like active, open, closed, on-hold, etc.  Statuses are tied to entitie
 
 -------------------------------------------------------------------------------
 
-### System
-
-#### Structure
-
-| Name          | Type          | Length   | Default  | Required |
-| ------------- |:-------------:| --------:| --------:| --------:|
-|               |               |          |          |          |
-
--------------------------------------------------------------------------------
-
 ### Tag
-Tags are ubiquitos categories.  Tags are typically one-to-many, with the one being an entity.
+Tags are ubiquitos categories.  Tags are many-to-many tied to an entity.
 
 -------------------------------------------------------------------------------
 
