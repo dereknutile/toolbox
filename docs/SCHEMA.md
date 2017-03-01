@@ -17,7 +17,7 @@ Note: consider a Laravel ACL package like [https://github.com/micheleangioni/ent
 -------------------------------------------------------------------------------
 
 ### Alert
-Stores messages to communicate alerts to user base.  Ties to the priority table.
+Stores messages to communicate alerts to users.
 
 #### Structure
 
@@ -25,7 +25,7 @@ Stores messages to communicate alerts to user base.  Ties to the priority table.
 | ------------- |:-------------:| --------:| --------:| --------:|
 | start         | datetime      |          |          |          |
 | end           | datetime      |          |          |          |
-| title         | varchar       |          |          |          |
+| title         | varchar       | 255      |          |          |
 | description   | text          |          |          |          |
 | priority_id   | integer       |          |          |          |
 | contact_id    | integer       |          |          |          |
