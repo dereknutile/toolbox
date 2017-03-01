@@ -41,7 +41,7 @@ Assets are physical devices tracked in the system.
 | Name          | Type          | Length   | Default  | Required |
 | ------------- |:-------------:| --------:| --------:| --------:|
 | asset_id      | integer       |          |          |          |
-| name          | varchar       |          |          |          |
+| name          | varchar       | 255      |          |          |
 | description   | text          |          |          |          |
 | assigned_to   | integer       |          |          |          |
 
