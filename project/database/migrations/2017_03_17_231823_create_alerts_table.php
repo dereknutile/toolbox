@@ -14,6 +14,13 @@ class CreateAlertsTable extends Migration
     {
         Schema::create('alerts', function (Blueprint $table) {
             $table->increments('id');
+            $table->dateTime('start_at');
+            $table->dateTime('end_at');
+            $table->string('title');
+            $table->text('description');
+            $table->integer('priority_id')->unsigned();
+            $table->integer('contact_id')->unsigned();
+            $table->integer('author_id')->unsigned();
             $table->timestamps();
         });
     }
