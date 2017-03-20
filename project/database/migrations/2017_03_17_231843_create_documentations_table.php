@@ -14,6 +14,10 @@ class CreateDocumentationsTable extends Migration
     {
         Schema::create('documentations', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->text('content');
+            $table->integer('status_id')->unsigned();
+            $table->integer('author_id')->unsigned();
             $table->timestamps();
         });
     }
