@@ -14,6 +14,10 @@ class CreateAssetsTable extends Migration
     {
         Schema::create('assets', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('asset_id')->unique();
+            $table->string('name');
+            $table->text('description');
+            $table->integer('assigned_to')->unsigned();
             $table->timestamps();
         });
     }
