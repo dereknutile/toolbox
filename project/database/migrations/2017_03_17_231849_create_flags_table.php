@@ -14,6 +14,9 @@ class CreateFlagsTable extends Migration
     {
         Schema::create('flags', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('entity');  //reference table, like assets
+            $table->integer('author_id')->unsigned();
             $table->timestamps();
         });
     }

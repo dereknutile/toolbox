@@ -14,6 +14,11 @@ class CreateFilesTable extends Migration
     {
         Schema::create('files', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('url');
+            $table->string('title');
+            $table->string('entity');  //reference table, like assets
+            $table->integer('entity_id')->unsigned();
+            $table->integer('author_id')->unsigned();
             $table->timestamps();
         });
     }
