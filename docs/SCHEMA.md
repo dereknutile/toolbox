@@ -82,7 +82,6 @@ Adding flags allow objects to be called out.  Examples: For Review, or For Docum
 | ------------- |:-------------:| --------:| --------:| --------:|
 | title         | varchar       | 255      |          |          |
 | entity        | varchar       | 255      |          |          |
-| entitiy_id    | integer       |          |          |          |
 | author_id     | integer       |          |          |          |
 
 -------------------------------------------------------------------------------
