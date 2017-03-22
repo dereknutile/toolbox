@@ -14,6 +14,13 @@ class CreateMessagesTable extends Migration
     {
         Schema::create('messages', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id')->unsigned();
+            $table->integer('requester_id')->unsigned();
+            $table->string('message');
+            $table->string('entity');  //reference table, like assets
+            $table->integer('entity_id')->unsigned();
+            $table->boolean('read');
+            $table->dateTime('due_at');
             $table->timestamps();
         });
     }

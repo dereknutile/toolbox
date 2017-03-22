@@ -14,6 +14,9 @@ class CreateStatusesTable extends Migration
     {
         Schema::create('statuses', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->text('content');
+            $table->string('entity');  // Statuses are tied to entities like 'workorder'.
             $table->timestamps();
         });
     }

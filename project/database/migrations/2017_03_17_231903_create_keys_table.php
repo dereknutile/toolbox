@@ -14,6 +14,10 @@ class CreateKeysTable extends Migration
     {
         Schema::create('keys', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->text('content');
+            $table->string('hash');
+            $table->integer('status_id')->unsigned();
             $table->timestamps();
         });
     }

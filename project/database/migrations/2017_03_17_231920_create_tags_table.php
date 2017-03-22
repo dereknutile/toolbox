@@ -14,6 +14,9 @@ class CreateTagsTable extends Migration
     {
         Schema::create('tags', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->string('entity');  // Tags are many-to-many tied to an entity.
+            $table->integer('author_id')->unsigned();
             $table->timestamps();
         });
     }

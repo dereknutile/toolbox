@@ -14,6 +14,8 @@ class CreateImpactsTable extends Migration
     {
         Schema::create('impacts', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
+            $table->text('content');
             $table->timestamps();
         });
     }
