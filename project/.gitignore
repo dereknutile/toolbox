@@ -1,6 +1,13 @@
+# Node modules
+# node_modules/
+
+# Assets and bower dependencies
+# assets/vendor/
+
 /vendor
 /node_modules
 /public/storage
 Homestead.yaml
 Homestead.json
+.sass-cache/
 .env
