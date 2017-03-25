@@ -1,18 +1,6 @@
 <header>
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand text-shadow-dark" href="{{ route('home') }}">{{ Config::get('app.app_title') }}</a>
-            </div>
-            @include('_includes/main_navigation')
-        </div>
-    </nav>
+
+    @include('_includes/main_navigation')
 
     @include('_includes/flash')
 
