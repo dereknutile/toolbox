@@ -17,10 +17,9 @@ class PagesController extends Controller
 
     public function contact()
     {
-        // $title = "Home Page";
-        // $page_active = "home";
-        // return view('pages.home', compact('title','page_active'));
-        return view('pages.splash');
+        $title = "Contact Page";
+        $page_active = "contact";
+        return view('pages.contact', compact('title','page_active'));
     }
 
     // Main landing page, i.e. the homepage
