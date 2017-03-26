@@ -8,10 +8,12 @@ use App\Http\Requests;
 
 class PagesController extends Controller
 {
-    public function about()
+    public function about(Request $request)
     {
         $title = "About Page";
         $page_active = "about";
+        // session(['flash_success' => 'Test']);
+        $request->session()->flash('flash_info', 'Testing a flash message.');
         return view('pages.about', compact('title','page_active'));
     }
 
