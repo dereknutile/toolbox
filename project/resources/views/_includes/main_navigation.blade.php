@@ -13,25 +13,25 @@
 
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="" href="/wo"><i class="fa fa-list-alt"></i><span class="hidden-sm">Workorders</span></a>
+                <li{!! (isset($page_active) AND $page_active == 'wo') ? " class='active'" : "" !!}>
+                    <a href="/wo"><i class="fa fa-list-alt"></i><span class="hidden-sm">Workorders</span></a>
                 </li>
-                <li>
-                    <a class="" href="/docs"><i class="fa fa-book"></i><span class="hidden-sm">Documentation</span></a>
+                <li{!! (isset($page_active) AND $page_active == 'docs') ? " class='active'" : "" !!}>
+                    <a href="/docs"><i class="fa fa-book"></i><span class="hidden-sm">Documentation</span></a>
                 </li>
-                <li>
-                    <a class="" href="/software"><i class="fa fa-code"></i><span class="hidden-sm">Software</span></a>
+                <li{!! (isset($page_active) AND $page_active == 'software') ? " class='active'" : "" !!}>
+                    <a href="/software"><i class="fa fa-code"></i><span class="hidden-sm">Software</span></a>
                 </li>
-                <li>
-                    <a class="" href="/assets"><i class="fa fa-barcode"></i><span class="hidden-sm">Assets</span></a>
+                <li{!! (isset($page_active) AND $page_active == 'assets') ? " class='active'" : "" !!}>
+                    <a href="/assets"><i class="fa fa-barcode"></i><span class="hidden-sm">Assets</span></a>
                 </li>
-                <li>
-                    <a class="" href="/keys"><i class="fa fa-key"></i><span class="hidden-sm">Keys</span></a>
+                <li{!! (isset($page_active) AND $page_active == 'keys') ? " class='active'" : "" !!}>
+                    <a href="/keys"><i class="fa fa-key"></i><span class="hidden-sm">Keys</span></a>
                 </li>
-                <li>
-                    <a class="" href="/directory"><i class="fa fa-address-card"></i><span class="hidden-sm">Directory</span></a>
+                <li{!! (isset($page_active) AND $page_active == 'directory') ? " class='active'" : "" !!}>
+                    <a href="/directory"><i class="fa fa-address-card"></i><span class="hidden-sm">Directory</span></a>
                 </li>
-                <li class="dropdown{!! (isset($active) AND $active == 'account') ? " active" : "" !!}">
+                <li class="dropdown{!! (isset($page_active) AND $page_active == 'account') ? " active" : "" !!}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="io-status"><i class="fa fa-user-circle"></i>Derek</span><i class="fa fa-exclamation callout animated animate-a-bit bounce hidden-xs"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#"><i class="fa fa-check-square-o"></i><span class="label label-primary">In</span></a></li>
