@@ -68,8 +68,13 @@ class PagesController extends Controller
 
     public function wo(Request $request)
     {
-        $title = "Workorders Page";
+        $page_title = "My Workorders";
+        $page_subtitle = "Trouble ticket database.";
         $page_active = "wo";
-        return view('pages.wo', compact('title','page_active'));
+        $crumbs = [
+            "Workorders"=>"/wo",
+            "My Workorders"=>"/wo"
+        ];
+        return view('pages.wo', compact('crumbs','title','page_title','page_subtitle','page_active'));
     }
 }
