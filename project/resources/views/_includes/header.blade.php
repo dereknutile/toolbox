@@ -4,13 +4,16 @@
 
     @include('_includes/flash')
 
-    <section class="header-section">
+    @if (isset($page_title))
+    <section class="page-header">
         <div class="container">
-            <h1 class="page-title">{{ Config::get('app.app_title') }}</h1>
-            @if (isset($title))
-            <h2 class="page-subtitle">{{ $title }}</small></h2>
+            <h1 class="page-title">{{ $page_title }}</h1>
+            @if (isset($page_subtitle))
+            <h2 class="subtitle hidden-xs"><small>{{ $page_subtitle }}</small></h2>
             @endif
-        </div><!-- /.container -->
-
-    </section><!-- /.header-section -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.page-header -->
+    @endif
 </header>

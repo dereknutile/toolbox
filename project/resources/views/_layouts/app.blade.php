@@ -5,6 +5,7 @@
 
 <body class="fixed-navbar">
 
+    @include('_includes/breadcrumbs')
     @include('_includes/header')
 
     <div class="page-content">
