@@ -67,11 +67,14 @@ Route::controllers([
 // Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
 // Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
 
-// Note: The dashboard will become the / page later when auth is wired up.
-Route::get('dashboard',['as'=>'dashboard', 'uses'=>'DashboardController@index']);
+// Assets
+Route::get('alerts',['as'=>'alerts', 'uses'=>'AlertController@index']);
 
 // Assets
 Route::get('assets',['as'=>'assets', 'uses'=>'AssetController@index']);
+
+// Note: The dashboard will become the / page later when auth is wired up.
+Route::get('dashboard',['as'=>'dashboard', 'uses'=>'DashboardController@index']);
 
 // Directory
 Route::get('directory',['as'=>'directory', 'uses'=>'DirectoryController@index']);
