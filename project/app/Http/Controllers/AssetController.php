@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class SoftwareController extends Controller
+class AssetController extends Controller
 {
-
     /**
      * Controller construct
      *
@@ -29,11 +28,11 @@ class SoftwareController extends Controller
      */
     public function index (Request $request)
     {
-        $page_title = "Software";
-        $page_subtitle = "Software inventory database.";
-        $page_active = "software";
+        $page_title = "Assets";
+        $page_subtitle = "Assets inventory database.";
+        $page_active = "assets";
         $crumbs = [
-            "Software"=>"/software"
+            "Assets"=>"/assets"
         ];
         return view('software.index', compact('crumbs','title','page_title','page_subtitle','page_active'));
     }
