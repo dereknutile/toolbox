@@ -45,6 +45,9 @@ Route::controllers([
 //   Route::get('account',['as'=>'account', 'uses'=>'Account\AccountController@index']);
 //
 //   Route::get('admin',['as'=>'admin', 'uses'=>'Admin\DashboardController@index']);
+Route::get('admin',['as'=>'admin', 'uses'=>'Admin\AdminController@index']);
+Route::get('admin/logs',['as'=>'admin.logs', 'uses'=>'Admin\AdminController@logs']);
+Route::get('admin/reports',['as'=>'admin.reports', 'uses'=>'Admin\AdminController@reports']);
 //
 //   Route::get('admin/directory/excel',['as'=>'admin.directory.excel', 'uses'=>'Admin\DirectoryController@excel']);
 //   Route::resource('admin/directory','Admin\DirectoryController');
