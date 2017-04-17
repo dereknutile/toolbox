@@ -6,9 +6,8 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
-class WorkorderController extends Controller
+class DocumentationController extends Controller
 {
-
     /**
      * Controller construct
      *
@@ -29,13 +28,12 @@ class WorkorderController extends Controller
      */
     public function index (Request $request)
     {
-        $page_title = "My Workorders";
-        $page_subtitle = "Trouble ticket database.";
-        $page_active = "wo";
+        $page_title = "Documentation";
+        $page_subtitle = "Official information and source or records.";
+        $page_active = "docs";
         $crumbs = [
-            "Workorders"=>"/wo",
-            "My Workorders"=>"/wo"
+            "Documentation"=>"/docs"
         ];
-        return view('workorders.index', compact('crumbs','title','page_title','page_subtitle','page_active'));
+        return view('documentation.index', compact('crumbs','title','page_title','page_subtitle','page_active'));
     }
 }

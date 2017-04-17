@@ -37,13 +37,6 @@ class PagesController extends Controller
         return view('pages.directory', compact('title','page_active'));
     }
 
-    public function docs(Request $request)
-    {
-        $title = "Documentation Page";
-        $page_active = "docs";
-        return view('pages.docs', compact('title','page_active'));
-    }
-
     public function keys(Request $request)
     {
         $title = "Security Keys Page";
