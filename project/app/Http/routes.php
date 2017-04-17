@@ -80,7 +80,9 @@ Route::get('assets',['as'=>'assets', 'uses'=>'PagesController@assets']);
 Route::get('contact',['as'=>'contact', 'uses'=>'PagesController@contact']);
 Route::get('directory',['as'=>'directory', 'uses'=>'PagesController@directory']);
 Route::get('keys',['as'=>'keys', 'uses'=>'PagesController@keys']);
-Route::get('software',['as'=>'software', 'uses'=>'PagesController@software']);
+
+// Software
+Route::get('software',['as'=>'software', 'uses'=>'SoftwareController@index']);
 
 // Workorders
 Route::get('wo',['as'=>'wo', 'uses'=>'WorkorderController@index']);
