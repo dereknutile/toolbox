@@ -31,9 +31,10 @@ class MessageController extends Controller
         $page_title = "Messages";
         $page_subtitle = "Personalized system messages.";
         $page_active = "messages";
+        $page_sub_active = "messages";
         $crumbs = [
             "Messages"=>"/messages"
         ];
-        return view('message.index', compact('crumbs','title','page_title','page_subtitle','page_active'));
+        return view('message.index', compact('crumbs','title','page_title','page_subtitle','page_active','page_sub_active'));
     }
 }

@@ -31,11 +31,12 @@ class AdminController extends Controller
     {
         $page_title = "Admin";
         $page_subtitle = "Personalized system messages.";
-        $page_active = "admin";
+        $page_active = "account";
+        $page_sub_active = "admin";
         $crumbs = [
             "Admin"=>"/admin"
         ];
-        return view('admin.index', compact('crumbs','title','page_title','page_subtitle','page_active'));
+        return view('admin.index', compact('crumbs','title','page_title','page_subtitle','page_active','page_sub_active'));
     }
 
 
@@ -49,12 +50,13 @@ class AdminController extends Controller
     {
         $page_title = "Admin";
         $page_subtitle = "Logs.";
-        $page_active = "admin";
+        $page_active = "account";
+        $page_sub_active = "logs";
         $crumbs = [
             "Admin"=>"/admin",
             "Logs"=>"/admin/logs"
         ];
-        return view('admin.logs', compact('crumbs','title','page_title','page_subtitle','page_active'));
+        return view('admin.logs', compact('crumbs','title','page_title','page_subtitle','page_active','page_sub_active'));
     }
 
 
@@ -68,11 +70,12 @@ class AdminController extends Controller
     {
         $page_title = "Admin";
         $page_subtitle = "Reports.";
-        $page_active = "admin";
+        $page_active = "account";
+        $page_sub_active = "reports";
         $crumbs = [
             "Admin"=>"/admin",
             "Reports"=>"/admin/reports"
         ];
-        return view('admin.reports', compact('crumbs','title','page_title','page_subtitle','page_active'));
+        return view('admin.reports', compact('crumbs','title','page_title','page_subtitle','page_active','page_sub_active'));
     }
 }

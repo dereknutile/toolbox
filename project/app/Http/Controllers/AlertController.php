@@ -31,9 +31,10 @@ class AlertController extends Controller
         $page_title = "Alerts";
         $page_subtitle = "General and personalized alerts and callouts.";
         $page_active = "alerts";
+        $page_sub_active = "alerts";
         $crumbs = [
             "Alerts"=>"/alerts"
         ];
-        return view('alert.index', compact('crumbs','title','page_title','page_subtitle','page_active'));
+        return view('alert.index', compact('crumbs','title','page_title','page_subtitle','page_active','page_sub_active'));
     }
 }
