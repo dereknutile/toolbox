@@ -76,12 +76,14 @@ Route::get('assets',['as'=>'assets', 'uses'=>'AssetController@index']);
 // Documentation
 Route::get('docs',['as'=>'docs', 'uses'=>'DocumentationController@index']);
 
+// Keys
+Route::get('keys',['as'=>'keys', 'uses'=>'KeyController@index']);
+
 // Pages
 Route::get('/',['as'=>'home', 'uses'=>'PagesController@splash']);
 Route::get('about',['as'=>'about', 'uses'=>'PagesController@about']);
 Route::get('contact',['as'=>'contact', 'uses'=>'PagesController@contact']);
 Route::get('directory',['as'=>'directory', 'uses'=>'PagesController@directory']);
-Route::get('keys',['as'=>'keys', 'uses'=>'PagesController@keys']);
 
 // Software
 Route::get('software',['as'=>'software', 'uses'=>'SoftwareController@index']);
