@@ -73,6 +73,9 @@ Route::get('dashboard',['as'=>'dashboard', 'uses'=>'DashboardController@index'])
 // Assets
 Route::get('assets',['as'=>'assets', 'uses'=>'AssetController@index']);
 
+// Directory
+Route::get('directory',['as'=>'directory', 'uses'=>'DirectoryController@index']);
+
 // Documentation
 Route::get('docs',['as'=>'docs', 'uses'=>'DocumentationController@index']);
 
@@ -83,7 +86,6 @@ Route::get('keys',['as'=>'keys', 'uses'=>'KeyController@index']);
 Route::get('/',['as'=>'home', 'uses'=>'PagesController@splash']);
 Route::get('about',['as'=>'about', 'uses'=>'PagesController@about']);
 Route::get('contact',['as'=>'contact', 'uses'=>'PagesController@contact']);
-Route::get('directory',['as'=>'directory', 'uses'=>'PagesController@directory']);
 
 // Software
 Route::get('software',['as'=>'software', 'uses'=>'SoftwareController@index']);
