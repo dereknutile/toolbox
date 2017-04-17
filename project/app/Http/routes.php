@@ -67,7 +67,7 @@ Route::controllers([
 // Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
 // Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
 
-// Assets
+// Alerts
 Route::get('alerts',['as'=>'alerts', 'uses'=>'AlertController@index']);
 
 // Assets
@@ -84,6 +84,9 @@ Route::get('docs',['as'=>'docs', 'uses'=>'DocumentationController@index']);
 
 // Keys
 Route::get('keys',['as'=>'keys', 'uses'=>'KeyController@index']);
+
+// Messages
+Route::get('messages',['as'=>'messages', 'uses'=>'MessageController@index']);
 
 // Pages
 Route::get('/',['as'=>'home', 'uses'=>'PagesController@splash']);
