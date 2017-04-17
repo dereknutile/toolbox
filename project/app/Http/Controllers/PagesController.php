@@ -65,16 +65,4 @@ class PagesController extends Controller
         $page_active = "home";
         return view('pages.splash', compact('title','page_active'));
     }
-
-    public function wo(Request $request)
-    {
-        $page_title = "My Workorders";
-        $page_subtitle = "Trouble ticket database.";
-        $page_active = "wo";
-        $crumbs = [
-            "Workorders"=>"/wo",
-            "My Workorders"=>"/wo"
-        ];
-        return view('pages.wo', compact('crumbs','title','page_title','page_subtitle','page_active'));
-    }
 }

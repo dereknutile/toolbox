@@ -70,6 +70,7 @@ Route::controllers([
 // Note: The dashboard will become the / page later when auth is wired up.
 Route::get('dashboard',['as'=>'dashboard', 'uses'=>'DashboardController@index']);
 
+// Pages
 Route::get('/',['as'=>'home', 'uses'=>'PagesController@splash']);
 Route::get('about',['as'=>'about', 'uses'=>'PagesController@about']);
 Route::get('assets',['as'=>'assets', 'uses'=>'PagesController@assets']);
@@ -78,7 +79,9 @@ Route::get('directory',['as'=>'directory', 'uses'=>'PagesController@directory'])
 Route::get('docs',['as'=>'docs', 'uses'=>'PagesController@docs']);
 Route::get('keys',['as'=>'keys', 'uses'=>'PagesController@keys']);
 Route::get('software',['as'=>'software', 'uses'=>'PagesController@software']);
-Route::get('wo',['as'=>'wo', 'uses'=>'PagesController@wo']);
+
+// Workorders
+Route::get('wo',['as'=>'wo', 'uses'=>'WorkorderController@index']);
 
 
 
