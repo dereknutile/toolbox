@@ -70,6 +70,9 @@ Route::get('admin/reports',['as'=>'admin.reports', 'uses'=>'Admin\AdminControlle
 // Route::get('sign-out',['as'=>'logout', 'uses'=>'Auth\AuthController@getLogout']);
 // Route::get('reset',['as'=>'reset', 'uses'=>'Auth\PasswordController@getEmail']);
 
+// Account
+Route::get('account',['as'=>'account', 'uses'=>'AccountController@index']);
+
 // Alerts
 Route::get('alerts',['as'=>'alerts', 'uses'=>'AlertController@index']);
 
