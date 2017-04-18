@@ -38,9 +38,9 @@
                         <li><a href="#"><i class="fa fa-square-o"></i><span class="label label-warning">Away</span></a></li>
                         <li><a href="#"><i class="fa fa-square-o"></i><span class="label label-danger">Out</span></a></li>
                         <li role="separator" class="divider"></li>
-                        <li{!! (isset($page_sub_active) AND $page_sub_active == 'account') ? " class='active'" : "" !!}><a href="/account/"><i class="fa fa-tachometer"></i>My Account</a></li>
-                        <li{!! (isset($page_sub_active) AND $page_sub_active == 'messages') ? " class='active'" : "" !!}><a href="/messages/"><i class="fa fa-comments-o"></i>My Messages&nbsp;<span class="badge">7</span></a></li>
                         <li{!! (isset($page_sub_active) AND $page_sub_active == 'alerts') ? " class='active'" : "" !!}><a href="/alerts/"><i class="fa fa-exclamation-triangle"></i>Alerts&nbsp;<span class="badge">1</span></a></li>
+                        <li{!! (isset($page_sub_active) AND $page_sub_active == 'messages') ? " class='active'" : "" !!}><a href="/messages/"><i class="fa fa-comments-o"></i>Messages&nbsp;<span class="badge">7</span></a></li>
+                        <li{!! (isset($page_sub_active) AND $page_sub_active == 'account') ? " class='active'" : "" !!}><a href="/account/"><i class="fa fa-tachometer"></i>Profile</a></li>
                         <li role="separator" class="divider"></li>
                         <li{!! (isset($page_sub_active) AND $page_sub_active == 'admin') ? " class='active'" : "" !!}><a href="/admin/"><i class="fa fa-cogs"></i>Administration</a></li>
                         <li{!! (isset($page_sub_active) AND $page_sub_active == 'logs') ? " class='active'" : "" !!}><a href="/admin/logs"><i class="fa fa-list"></i>Logs</a></li>
