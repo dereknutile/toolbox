@@ -22,17 +22,20 @@
                 <li class="dropdown{% if page.active == 'software' %} active{% endif %}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-ellipsis-h"></i></a>
                     <ul class="dropdown-menu">
-                        <li{!! (isset($page_active) AND $page_active == 'docs') ? " class='active'" : "" !!}>
-                            <a href="/docs"><i class="fa fa-book"></i><span class="hidden-sm">Documentation</span></a>
-                        </li>
-                        <li{!! (isset($page_active) AND $page_active == 'software') ? " class='active'" : "" !!}>
-                            <a href="/software"><i class="fa fa-code"></i><span class="hidden-sm">Software</span></a>
-                        </li>
                         <li{!! (isset($page_active) AND $page_active == 'assets') ? " class='active'" : "" !!}>
                             <a href="/assets"><i class="fa fa-barcode"></i><span class="hidden-sm">Assets</span></a>
                         </li>
+                        <li{!! (isset($page_active) AND $page_active == 'change') ? " class='active'" : "" !!}>
+                            <a href="/change"><i class="fa fa-calendar-check-o"></i><span class="hidden-sm">Change Management</span></a>
+                        </li>
+                        <li{!! (isset($page_active) AND $page_active == 'docs') ? " class='active'" : "" !!}>
+                            <a href="/docs"><i class="fa fa-book"></i><span class="hidden-sm">Documentation</span></a>
+                        </li>
                         <li{!! (isset($page_active) AND $page_active == 'keys') ? " class='active'" : "" !!}>
                             <a href="/keys"><i class="fa fa-key"></i><span class="hidden-sm">Keys</span></a>
+                        </li>
+                        <li{!! (isset($page_active) AND $page_active == 'software') ? " class='active'" : "" !!}>
+                            <a href="/software"><i class="fa fa-code"></i><span class="hidden-sm">Software</span></a>
                         </li>
                     </ul>
                 </li>
